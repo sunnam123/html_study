@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스타일 상속</title>
+  <style>
+    /* body 태그안의 모든 자식 요소인 h1, h2, p 태그에 body 태그 스타일이 적용됨 */
+    body {
+      color: blue;
+    }
+    /* h2의 속성 중 중복되는 것이 있다면 재정의 된다.
+    재정의 된 속성은 부모속성보다 우선순위가 높다.
+     */
+    h2 {
+      font-size: 20px; /*글자크기 20픽셀 */
+      color: brown; /* 글자색 갈색 */
+    }
+  </style>
+</head>
+<body>
+<h1>CSS</h1>
+<h2>웹 문서의 디자인과 내용을 분리합니다</h2> <!-- body 태그안의 h1은 body 스타일이 적용되야 하나
+h2 속성중 중복된 color : brown 이 있기때문에 재정의가 되어 부모속성보다 우선순위가 높아 brown 컬러로 표현됨 -->
+<p>웹 표준에 의한 웹 문서는 디자인과 내용이 분리되어 있습니다.</p>
+<p>내용은 HTML을 이용해 구성하고, 디자인은 css를 이용해 꾸미는 것입니다.</p>
+
+</body>
+</html>
