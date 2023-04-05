@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사</title>
+    <style>
+        body{
+            background-color: #fff;
+        }
+        form fieldset{
+            margin-bottom: 25px;
+        }
+        form legend{
+            font-size:15px;
+            font-weight: 600;
+        }
+        form label.reg{
+            font-size: 14px;
+            color: #390;
+            font-weight: bold;
+            width: 110px;
+            float: left;
+            text-align: right;
+            margin-right: 10px;
+        }
+        form ul li{
+            list-style: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        #stuffs {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>얼마나 SNS를 자주 이용하십니까?</legend>
+    <ul>
+        <li>
+            <label class="reg" for="satis">일주일에 SNS 사용하는 횟수<small>(적음, 적당함, 많음)</small></label>
+            <input type="range" id="satis" value="2" min="1" max="3">
+        </li>
+        <li>
+            <label class="reg" for="stuffs">하루에 SNS 사용하는 시간<small>(최대24시간)</small></label>
+            <input type="number" id="stuffs2" value="1" min="0" max="24" step="1">
+        </li>
+        <li>
+            <label class="reg" for="stuffs">지금 사용하고 있는 SNS개수</label>
+            <input type="number" id="stuffs" value="1" min="0" max="10" step="1">
+        </li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>귀하가 자주 사용하는 SNS를 선택해주세요</legend>
+    <form>
+            <label><input type="radio" name="sns" vaule="sns1`">Facebook</label>
+            <label><input type="radio" name="sns" vaule="sns2">Instagram</label>
+            <label><input type="radio" name="sns" vaule="sns3">twitter</label>
+            <label><input type="radio" name="sns" vaule="sns4">Blog</label>
+            <label><input type="radio" name="sns" vaule="sns5">Youtube</label>
+
+    </form>
+
+</fieldset>
+<fieldset>
+    <legend>SNS를 언제(년도, 월, 일)부터 이용하셨나요?</legend>
+    <form>
+        <label><input type="date" id="start"> </label>
+    </form>
+</fieldset>
+<fieldset>
+    <legend>SNS를 주로 이용하는 시간대가 언제입니까?</legend>
+    <form>
+        <label>시작 시간<input type="time" value="0:00" id="start1"></label>
+        <label>종료 시간<input type="time" vaule="24:00" id="end1"></label>
+    </form>
+</fieldset>
+<p><a href="step1.html" target="_blank">이전 항목</a> <a href="step3.html" target="_blank">다음 항목</a> </p>
+</body>
+</html>

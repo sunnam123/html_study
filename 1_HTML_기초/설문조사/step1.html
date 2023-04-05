@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>설문조사</title>
+    <style>
+        body{
+            background-color: #fff;
+        }
+        form fieldset{
+            margin-bottom: 25px;
+        }
+        form legend{
+            font-size:15px;
+            font-weight: 600;
+        }
+        form label.reg{
+            font-size: 14px;
+            color: #390;
+            font-weight: bold;
+            width: 110px;
+            float: left;
+            text-align: right;
+            margin-right: 10px;
+        }
+        form ul li{
+            list-style: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        #member, #stuffs{
+            width:50px;
+        }
+
+        #pre{
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>성별</legend>
+        <label><input type="radio" name="gender" vaule="gender1">남성 </label>
+        <label><input type="radio" name="gender" vaule="gender2">여성 </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>연령대</legend>
+        <label><input type="radio" name="age" vaule="age1">10대</label>
+        <label><input type="radio" name="age" vaule="age2">20대</label>
+        <label><input type="radio" name="age" vaule="age3">30대</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>사용하고 있는 SNS</legend>
+        <label><input type="checkbox" name="sns" vaule="sns1`">Facebook</label>
+        <label><input type="checkbox" name="sns" vaule="sns2">Instagram</label>
+        <label><input type="checkbox" name="sns" vaule="sns3">twitter</label>
+        <label><input type="checkbox" name="sns" vaule="sns4">Blog</label>
+        <label><input type="checkbox" name="sns" vaule="sns5">Youtube</label>
+        <label><input type="checkbox">기타 : <input type="text" id="user" size="5"></label>
+    </fieldset>
+
+    <p><a href="step2.html" target="_blank">다음 항목</a> </p>
+</form>
+
+</body>
+</html>
