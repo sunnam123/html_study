@@ -5,6 +5,14 @@
     <title>Title</title>
 
     <style>
+
+        fieldset{
+            width:400px;
+            float:left; /* li요쇼를 왼쪽에서 오른쪽으로 배치 */
+            /* margin, padding 추후 css 박스모델에서 자세히 다룰 예정임 */
+            margin: 10px 15px; /*마진*/
+            padding:10px; /*패딩*/
+        }
         body {
             font-family: "맑은 고딕", 돋움;
         }
@@ -32,13 +40,46 @@
         .book-desc {
             padding:10px;
         }
+        button {
+            width: 140px;
+            height: 50px;
+            background-color: rgb(0, 110, 225);
+            border: 1px solid rgb(0, 110, 255);
+            /* 가장자리 8px 만큼 둥글게 처리 */
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .bg3 {
+            background: url('images/death.jpg') no-repeat;
+            /* 컨텐츠가 시작되는 지점에서 백그라운드 시작(이미지 삽입) */
+            background-origin: content-box;
+        }
     </style>
 </head>
 <body>
-<ul>
+<fieldset>
     <legend>1</legend>
-    <li img src=""></li>
+<ul>
+
+    <a href="https://tickets.interpark.com/goods/22000970" target="_blank"><img src="images/death.jpg"></a>
+    <li>
+        <label><input type="checkbox" name="vote1" value="death">투표하기</label>
+        <button>상세보기</button>
+    </li>
 </ul>
+    </fieldset>
+<fieldset>
+    <legend>2</legend>
+    <ul>
+        <a href="https://tickets.interpark.com/goods/22004761" target="_blank"><img src="images/man.jpg"></a>
+        <li>
+            <label><input type="checkbox" name="vote2" value="man">투표하기</label>
+            <button><a href="https://tickets.interpark.com/goods/22004761" target="_blank">상세보기</a></button>
+        </li>
+    </ul>
+
+</fieldset>
 
 </body>
 </html>
