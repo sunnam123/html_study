@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <title>연습</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+
+
 
         #wrapper{
             width:800px;
             margin: 0 auto;
         }
-        header{
+        .header{
             width: 100%;
-            height: 150px;
+            padding: 20px;
+
+            text-align : center;
 
 
-            background-position: right center;
+
             background-color : #0094ff;
         }
 
-        div{
+        .div{
             margin : 10px;
         }
         .h1{
@@ -27,43 +37,69 @@
             font-weight: bold;
             text-align: center;
         }
-        header nav{
-            float:left;
-            width:70%;
-            margin-top: 50px;
+        .nav{
+
+            width:100%;
+            padding: 20px;
+            background-color: #339900;
+            text-align: center;
         }
-        nav ul{
+        .nav ul{
             list-style-type: none; /* 마커 사라지게 */
+            padding: 0;
+            margin: 0;
+            display : inline-block;
         }
-        nav ul li{
+        .nav ul li{
             display : inline;
-            float : left;
+
             font-weight: bold;
             margin:15px;
         }
-        nav ul li a{
+        .nav ul li a{
             color:white;
             text-decoration: none;
+            display : inline-block;
+
+        }
+        .inline-block {
+            display: inline-block;
+            border: 2px solid black;
+            padding: 10px;
+            width: auto;
+            height: auto;
+        }
+
+        .section{
+            width: 75%;
+            height: 300px;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff2ae;
+            display: inline-block;
         }
 
     </style>
 </head>
 <body>
-<h1 class="h1">연습제목입니다.</h1>
-<div id="wrapper">
-<header>
-    <nav>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-        </ul>
-    </nav>
-
-
-
-</header>
-
+<div class="header">
+    <h1 class="h1">연습</h1>
 </div>
+<div class="nav">
+    <ul>
+        <li><div class="inline-block"><a href="#">가나다</a></div></li>
+        <li><div class="inline-block"><a href="#">123</a></div></li>
+        <li><div class="inline-block"><a href="#">abc</a></div></li>
+    </ul>
+</div>
+<div class="section">
+<h2 class="h1">섹션연습</h2>
+</div>
+
+
+
+
+
 </body>
 
 </html>
