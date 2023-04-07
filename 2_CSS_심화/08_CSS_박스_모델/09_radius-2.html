@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델</title>
+  <style>
+    div{
+      width : 250px;
+      height : 300px;
+      margin : 20px;
+      display : inline-block;
+      border: 2px solid; /* 2px짜리 실선, 기본색 검정 */
+      border-radius: 70px/40px; /*네 방향 라운딩, 70px, 수평반지름, 40px 수직반지름 */
+    }
+    .bg{
+      background : url(images/pic2.jpg) no-repeat;
+      /* 이미지가 background 영역에서 남김없이 표현하고자 할떄 사용.
+      이를 위해 이미지가 가로, 세로 비율이 유지된 채 그림이 확대 될 수 있다.
+       */
+      background-size : cover;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+<div class="bg"></div>
+
+</body>
+</html>
