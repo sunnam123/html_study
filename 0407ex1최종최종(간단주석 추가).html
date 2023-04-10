@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>티켓정보</title>
+  <style>
+    @font-face { /*외부 폰트 불러오기 */
+      font-family: 'Happiness-Sans-Title';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body { /* body의 내용은 margin이 0으로 입력됨 */
+      margin: 0;
+    }
+
+    .header { /*header div 지정 */
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #C0DEFF;
+    }
+
+    .nav { /* ul, li를 불러오기위한 태그 속성 nav */
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background-color: #FFE5CA;
+    }
+
+    .nav ul { /
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+
+    .nav li {
+      font-family: "Happiness-Sans-Title";
+      display: inline;
+      margin: 0 10px;
+    }
+
+    .section { /*section div속성 지정 */
+      width: 100%;
+      height: auto; /* height : auto (높이는 section의 내용크기에 맞춰서 자동으로) */
+      padding: 20px;
+      text-align: center; /* 텍스트 위치 중간 */
+
+      display: inline-block; /* 내용물 표시 가로로 정렬 */
+    }
+    .nav2 {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background-color: #ffffff;
+      background-size: cover;
+    }
+    .sidebar { /* 사이드바 */
+      width: 20%;
+      height: 300px;
+      padding: 20px;
+      text-align: center;
+      float: right;
+      display: inline-block;
+      background-color: white;
+      border: 1px solid grey;
+      border-radius:5px ;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      margin: 0;
+      padding : 0;
+    }
+
+    .sidebar li {
+      list-style: none;
+      margin: 5px 0;
+    }
+
+    .footer { /* 가장 아래 footer 속성 정의 */
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      clear: both;
+      background-color: #4f4f4f;
+      color: #fff;
+    }
+    .footer1 { /* section 바로 밑 footer 속성 정의 */
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      clear: both;
+      background-color: #C0DEFF;
+      color: black;
+    }
+
+    .inline-block{ /* 두번쨰 header에 들어가는 block 속성 정의 */
+      display: inline-block; /* 배열 */
+      border: 2px solid black;
+      padding: 10px;
+      width: auto; /* 글자수에 맞춰서 크기 자동 */
+      height: auto;
+      border-radius: 70px/40px; /* 가장자리 동그랗게 */
+    }
+    #bg { /* 세번째 header에 들어가는 광고 이미지 속성 정의 */
+      background: url(images/adv.png) no-repeat; /*배경 이미지 */
+      background-size: cover; /*영역 꽉채우기 */
+    }
+    .subm {
+      display: block;
+      background-color: #fff;
+      border: 1px solid #dedede;
+      cursor:pointer;
+      padding: 5px 10px 6px 7px;
+    }
+
+    .subm img{ /*버튼 이미지 호출 */
+      border: 0;
+      padding: 0;
+      width: 16px;
+      height: 16px;
+    }
+    .subm:hover{ /* 버튼 눌렀을때 나타나는 변화 */
+      background-color: #e6efc2;
+      border: 1px solid #c6d880;
+      color:#529215
+
+    }
+    .box1{
+      display : inline-block;
+      margin: 3px;
+      padding: 10px 10px;
+      border: 0.5px solid grey;
+      text-align: center;
+    }
+    .box2{
+      margin: 3px;
+      padding: 5px 5px;
+      border: 0.5px solid grey;
+      text-align: center;
+    }
+    h1{
+      font-size: 5em;
+      font-family: "Happiness-Sans-Title";
+    }
+    h4{
+      font-family: "Happiness-Sans-Title";
+    }
+    h2{
+      text-align: left;
+    }
+    .round {
+      border-radius:20px ;
+    }
+    small{
+      font-size: 30px;
+    }
+    .ab{
+      text-align : right;
+    }
+    fieldset{ /* section 속 fieldset 속성정의 */
+      display : inline-block; /* 내용물 배열 */
+
+
+    }
+    .box3{
+      display: inline-block;
+
+    }
+
+  </style>
+</head>
+<body>
+<div class="header"> <!-- 헤더부분 시작 -->
+
+  <!-- 헤더 제목 h1 class 지정해서 외부 폰트 불러옵니다.-->
+<div class="ab">
+
+  <input type="button" value="로그인" oneclick="window.open()">
+  <!--헤더 버튼1-->
+  <input type="button" value="회원가입" oneclick="window.open()">
+  <!--헤더 버튼2-->
+  </div>
+  <h1>2023 Ticket<br><small>이달의 추천 공연</small></h1> <!-- h1 제목 -->
+
+</div>
+
+<div class="nav"> <!-- ul li를 호출하기 위한 nav태그 호출-->
+  <ul>
+    <li class="inline-block"><a href="#" style="text-decoration-line: none;">뮤지컬</a></li>  <!--inline-block 속성 호출해온후 <a>를 이용한 텍스트버튼링크 활성화 -->
+    <li class="inline-block"><a href="#" style="text-decoration-line: none;">콘서트</a></li>
+    <li class="inline-block"><a href="#" style="text-decoration-line: none;">연극</a></li>
+    <li class="inline-block"><a href="#" style="text-decoration-line: none;">클래식/무용</a></li>
+    <li class="inline-block"><a href="#" style="text-decoration-line: none;">스포츠</a></li>
+  </ul>
+</div>
+<div class="nav2"> <!-- 광고 그림 페이지속성 -->
+  <ul>
+<img src="images/adv.png">
+  </ul>
+</div>
+<div class="section"> <!-- section 속성 호출 section 시작-->
+  <div class="box2"><h2>Home > 뮤지컬</h2></div> <!--box2속성 호출-->
+  <fieldset> <!--fieldset 만들어서 section속에 나타나게끔 -->
+    <legend>뮤지컬 데스노트 (The Musical Death Note)</legend> <!-- fieldset 테두리 글자-->
+    <a href="https://tickets.interpark.com/goods/23002291" target="_blank"><img src="images/death.jpg"></a><!-- 이미지 누를시 링크 -->
+    <h4>2023,04,01~06.19 충무 아트센터 대극장</h4>
+
+    <label>예매율 97%</label>
+    <!-- 전체 60초 중 50초 진행-->
+    <progress value="57" max="60"></progress> <!-- progress 사용하여 진행률표시-->
+    <input type="button" value="좌석우위" oneclick="window.open()"> <!--진행률 옆 버튼 호출 button 속성 호출, 클릭시 새 window창으로 이동-->
+
+
+  </fieldset>
+
+  <fieldset>
+    <legend>뮤지컬 엘리자벳(Elisabeth)</legend>
+    <a href="https://tickets.interpark.com/goods/22014026" target="_blank"><img src="images/elle.jpg"></a>
+    <h4>2022,12,30~01,01 성남아트센터 오페라하우스</h4>
+    <label>예매율 80%</label>
+    <!-- 전체 60초 중 50초 진행-->
+    <progress value="40" max="60"></progress>
+    <input type="button" value="좌석우위" oneclick="window.open()">
+  </fieldset>
+
+  <fieldset>
+    <legend>뮤지컬 킹키부츠(Kinky Boots</legend>
+    <a href="https://tickets.interpark.com/goods/22013414" target="_blank"><img src="images/boots.jpg"></a>
+    <h4>2022,12,24~01,01 부산 드림씨어터</h4>
+    <label>예매율 95%</label>
+    <!-- 전체 60초 중 50초 진행-->
+    <progress value="55" max="60"></progress>
+    <input type="button" value="좌석우위" oneclick="window.open()">
+
+  </fieldset>
+
+</div>
+
+<div class="footer1"> <!-- section밑 footer1속성 호출 -->
+  <h3>연관검색어 <img src="images/돋보기.png" width="20" height="20"></h3><p class="box1">서울 전시회 추천</p><p class="box1">맘마미아</p><p class="box1">뮤지컬 추천</p><p class="box1">인천 가볼만한 곳</p>
+
+
+</div>
+
+<div class="footer">
+  <p class="box3">회사소개 ㅣ</p>
+  <p class="box3"><strong>개인정보 처리방침</strong>ㅣ</p>
+  <p  class="box3">이용약관ㅣ</p>
+  <p  class="box3">고객센터ㅣ</p>
+  <p  class="box3">티켓판매안내ㅣ</p>
+  <p  class="box3">광고안내</p>
+  <hr>
+
+</div>
+</body>
+</html>

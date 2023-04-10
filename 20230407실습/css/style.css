@@ -1,0 +1,48 @@
+body{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+.container {
+    border: solid 3px #ccc;
+    padding: 100px 20px;
+    width: 70%;
+    margin: 100px auto;
+}
+.container.left ol{
+    text-align: left;
+}
+p {
+    padding: 0 0 100px 0;
+}
+
+ fieldset{
+     text-align: left;
+     margin: 30px auto;
+ }
+label {
+    width: 120px;
+    float: none;
+
+}
+.container.left label {
+    width: auto !important;
+    float: none !important;
+}
+li {
+    padding: 10px;
+}
+hr {
+    margin: 50px 0;
+}
+.accent {color: #339900}
+.subm {
+    padding: 5px 10px 6px 7px; /* 패딩 */
+}
+.centered { /* class=centered인 div에 적용할 스타일 */
+    text-align: center; /* 가운데 정렬 */
+}
+
+ul { /* 순서없는 목록에 적용할 스타일 */
+    list-style-type: none; /* 불릿 없앰 */
+}
