@@ -1,0 +1,64 @@
+body{margin: 0;}
+
+/* header 영역 */
+header{
+    height: 200px;
+    background-image: url('../images/ex1.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+/* 네비게이션 메뉴바 */
+nav{
+    display: flex;
+    background-color: #333333;
+}
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: #dddddd;
+    color: black;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 왼쪽 사이드 */
+aside{
+    flex-grow: 3;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+article{
+    flex: 7;
+    background-color: white;
+    padding: 20px;
+}
+
+.background1{
+    background: #aaaaaa;
+    width: 100%;
+    padding: 20px;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background: gray;
+}
+
+/* 반응형 웹 참고자소서보고 따라해봤습니다. */
+@media all and (max-width: 600px){
+    #container, nav{
+        flex-direction: column;
+    }
+}
