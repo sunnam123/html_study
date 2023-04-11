@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>속성 선택자</title>
+  <style>
+    ul{
+      list-style:none; /* ul속 항목 안보이게 */
+    }
+    li{
+      display : inline-block; /* 구성은 줄바꿈 */
+      margin: 10px;
+    }
+    li a{
+      padding: 5px 20px;
+      font-size: 14px;
+      color: blue;
+      text-decoration: none;
+    }
+    .flat{
+      background: blue;
+      color:white;
+    }
+    /* 속성중에 'button'이 들어간 요소에 스타일 적용 */
+    /*step1 [class~="button"] */
+    [class ~="button"]{
+      /* step2 [class="button"]과 비교해볼것 class="flat button"은 적용되지 않는다 */
+    border : 2px solid black;
+      box-shadow:  rgba(0, 0, 0, 0.4) 5px 5px;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li><a href="#">메뉴1</a></li>
+  <li><a href="#">메뉴2</a></li>
+
+  <!-- button 속성 스타일 적용 -->
+  <li><a href="#" class="button">메뉴 3</a></li>
+
+  <!-- flat과 button 속성 스타이 적용 -->
+  <li><a href="#" class="flat button">메뉴 4</a></li>
+</ul>
+</body>
+</html>
